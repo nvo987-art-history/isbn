@@ -4,9 +4,8 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="NVO987 ISBN Publications">
+<meta name="description" content="ISBN Publications - NVO987">
 <meta name="author" content="NVO987">
-<meta name="theme-color" content="#1b1816">
 
 <title>ISBN Publications | NVO987</title>
 
@@ -19,82 +18,119 @@
 }
 
 body{
-    background:#1b1816;
-    color:#f4f4f4;
+    background:#000;
+    color:#d4af37;
     font-family:Georgia,"Times New Roman",serif;
-    line-height:1.8;
+    line-height:1.7;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px 30px;
+}
+
+header h1{
+    color:#d4af37;
+    font-size:2.6rem;
+    font-weight:normal;
+    letter-spacing:2px;
+}
+
+header p{
+    margin-top:12px;
+    color:#c9b46b;
 }
 
 .container{
     width:92%;
-    max-width:920px;
+    max-width:1100px;
     margin:auto;
-    padding:60px 20px;
+    padding:20px 0 60px;
 }
 
-h1{
-    font-size:3rem;
-    font-weight:600;
-    margin-bottom:40px;
+.card{
+    background:#111;
+    border:1px solid #d4af37;
+    border-radius:14px;
+    padding:30px;
+    margin:30px 0;
+    box-shadow:0 0 22px rgba(212,175,55,.18);
+    transition:.3s;
 }
 
-.book{
-    padding:10px 0 45px;
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 0 30px rgba(212,175,55,.35);
 }
 
-.book h2{
-    font-size:2.45rem;
-    font-weight:600;
-    margin-bottom:24px;
+.type{
+    color:#d4af37;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-size:.9rem;
+    margin-bottom:15px;
 }
 
-.book p{
-    font-size:1.28rem;
-    color:#ececec;
+.title{
+    color:#fff;
+    font-size:2rem;
+    font-style:italic;
     margin-bottom:22px;
 }
 
-.meta{
-    color:#dddddd;
+.description{
+    color:#f5f5f5;
+    font-size:1.08rem;
+    margin-bottom:16px;
 }
 
-hr{
-    border:none;
-    border-top:1px solid #4b4643;
-    margin:45px 0;
+.meta{
+    color:#f5f5f5;
+    margin-bottom:12px;
 }
 
 footer{
-    margin-top:40px;
-    color:#d6d6d6;
-    font-size:1.15rem;
+    border-top:1px solid #333;
+    text-align:center;
+    padding:35px 15px;
+    color:#d4af37;
 }
 
-a{
-    color:#ffffff;
+footer a{
+    color:#d4af37;
     text-decoration:none;
 }
 
-a:hover{
+footer a:hover{
     text-decoration:underline;
 }
 
-@media(max-width:768px){
+@media (max-width:768px){
+
+header{
+    padding:40px 15px 20px;
+}
+
+header h1{
+    font-size:2rem;
+}
+
+.card{
+    padding:20px;
+}
+
+.title{
+    font-size:1.45rem;
+    line-height:1.45;
+}
+
+.description,
+.meta{
+    font-size:1rem;
+}
 
 .container{
-    padding:35px 18px;
-}
-
-h1{
-    font-size:2.3rem;
-}
-
-.book h2{
-    font-size:1.9rem;
-}
-
-.book p{
-    font-size:1.08rem;
+    width:95%;
 }
 
 }
@@ -105,59 +141,89 @@ h1{
 
 <body>
 
+<header>
+
+<h1>ISBN Publications</h1>
+
+<p>Open-access monographs published by NVO987.</p>
+
+</header>
+
 <div class="container">
+    <div class="card">
 
-<h1>Book</h1>
-<section class="book">
+    <div class="type">BOOK</div>
 
-    <h2>Color as a Generative Principle in the Work of Sonia Delaunay</h2>
+    <div class="title">
+        Color as a Generative Principle in the Work of Sonia Delaunay
+    </div>
 
-    <p>
-        A conceptual preamble on color theory in the context of algorithmic image production
-    </p>
+    <div class="description">
+        A conceptual preamble on color theory in the context of algorithmic image production.
+    </div>
 
-    <p class="meta">Open-access monograph</p>
+    <div class="meta">
+        Open-access monograph
+    </div>
 
-    <p class="meta">First edition</p>
+    <div class="meta">
+        First edition
+    </div>
 
-    <p class="meta">Forthcoming: September 2026</p>
+    <div class="meta">
+        Forthcoming: September 2026
+    </div>
 
-    <p class="meta">
+    <div class="meta">
         ISBN 978-615-02-6092-1
-    </p>
-
-</section>
-
-<hr>
-
-<section class="book">
-
-    <h2>The Pop Culture of the 1980s</h2>
-
-    <p>
-        An English-language popular science book about the pop culture of the 1980s.
-    </p>
-
-    <p class="meta">Open-access monograph</p>
-
-    <p class="meta">First edition</p>
-
-    <p class="meta">Forthcoming: December 2026</p>
-
-    <p class="meta">
-        ISBN 978-615-02-4509-6
-    </p>
-
-</section>
-
-<hr>
-<footer>
-
-    <p>June 29, 2026</p>
-
-</footer>
+    </div>
 
 </div>
+
+<div class="card">
+
+    <div class="type">BOOK</div>
+
+    <div class="title">
+        The Pop Culture of the 1980s
+    </div>
+
+    <div class="description">
+        An English-language popular science book about the pop culture of the 1980s.
+    </div>
+
+    <div class="meta">
+        Open-access monograph
+    </div>
+
+    <div class="meta">
+        First edition
+    </div>
+
+    <div class="meta">
+        Forthcoming: December 2026
+    </div>
+
+    <div class="meta">
+        ISBN 978-615-02-4509-6
+    </div>
+
+</div>
+</div>
+
+<footer>
+
+    <p>
+        <a href="https://identity.nvo987.us/.well-known/did.json">
+            did:web:identity.nvo987.us
+        </a>
+        &nbsp;|&nbsp;
+        <a href="mailto:contact@nexarium.us">
+            contact@nexarium.us
+        </a>
+    </p>
+
+</footer>
 
 </body>
 </html>
